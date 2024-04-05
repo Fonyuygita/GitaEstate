@@ -1,0 +1,20 @@
+
+
+//  PAGE RESPONSIVENESS
+@mixin sm{
+    @media(max-width:730px){
+        @content;
+    }
+}
+
+@mixin md{
+    @media(max-width:1024px){
+        @content;
+    }
+}
+
+@mixin lg{
+    @media(max-width:1366px){
+        @content;
+    }
+}
