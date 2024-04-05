@@ -94,16 +94,17 @@
             background-color: black;
             color: white;
             height: 100vh;
-            width: 100%;
+            width: 50%;
             top: 0;
-            right: -100%;
+           
             transition: all 1s ease;
             display: flex;
-          
+          overflow: hidden;
             flex-direction: column;
             align-content: center;
             justify-content: center;
             font-size: 24px;
+            opacity: 0;
 
             a{
                 text-align: center;
@@ -112,10 +113,19 @@
             @include sm {
                 a{
                     display: initial;
+                    @include sm{
+                        font-size: 16px;
+                     }
+         
+                }
+
+                @include sm{
+                    padding: 20px;
                 }
             }
             &.active{
                 right:0;
+                opacity: 1;
             }
         }
     }

@@ -4,7 +4,7 @@ import HomePage from "./pages/home/home-page"
 function App() {
   return (
     <div className="layout">
-    <div className="navbar">
+    <div className="navmenu">
     <Navbar/>
     </div>
     <div className="content">
