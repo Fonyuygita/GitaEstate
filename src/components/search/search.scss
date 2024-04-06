@@ -60,7 +60,15 @@
              }
 
              @include sm{
+                &:nth-child(2), &:nth-child(3){
+                    padding: 20px;
+                    width: 340px;
+                    text-align: center;
+
+                }
                padding: 20px;
+               width: 340px;
+               text-align: center;
              }
             
  
