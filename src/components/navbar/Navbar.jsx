@@ -5,7 +5,7 @@ const Navbar = () => {
 
   const [open, setOpen]=useState(false)
   return (
-    <nav className="navbar">
+    <nav className="nav">
       <div className="left">
         <a href="/" className="logo">
           <img src="/logo.png" alt="" />

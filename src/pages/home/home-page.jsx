@@ -35,7 +35,7 @@ const HomePage = () => {
         </div>
       </div>
       <div className="imgContainer">
-        <img src="/bg.png" alt="" />
+        <img src="/left-image.png" alt="" />
       </div>
     </div>
   );
