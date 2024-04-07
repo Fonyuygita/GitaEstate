@@ -1,25 +1,29 @@
 export const listData = [
     {
       id: 1,
-      title: "A Great Apartment Next to the Beach!",
-      img: "/Mbingo.png",
+      title: "Nkwen Baptist Hospital",
+      img: "/nkewn.png",
       bedroom: 2,
       bathroom: 1,
       price: 1000,
       address: "456 Park Avenue, London",
       latitude: 51.5074,
       longitude: -0.1278,
+      ratings:["⭐","⭐","⭐", "⭐"]
+   
     },
     {
       id: 2,
-      title: "An Awesome Apartment Near the Park! Almost too good to be true!",
-      img: "/Mbingo.png",
+      title: "Bamenda Regional Hospital!",
+      img: "/bamenda-regional.png",
       bedroom: 3,
       bathroom: 2,
       price: 1500,
       address: "789 Oxford Street, London",
       latitude: 52.4862,
       longitude: -1.8904,
+      ratings:["⭐","⭐","⭐", "⭐"]
+
     },
     {
       id: 3,
@@ -31,50 +35,60 @@ export const listData = [
       address: "101 Baker Street, London",
       latitude: 53.4808,
       longitude: -2.2426,
+      ratings:["⭐","⭐","⭐", "⭐"]
+
     },
     {
       id: 4,
-      title: "Great Location! Great Price! Great Apartment!",
-      img: "https://images.pexels.com/photos/2467285/pexels-photo-2467285.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      title: "Banso Baptist Hospital!",
+      img: "/bbh.png",
       bedroom: 2,
       bathroom: 1,
       price: 1000,
       address: "234 Kingsway, London,",
       latitude: 53.8008,
       longitude: -1.5491,
+      ratings:["⭐","⭐","⭐", "⭐"]
+
     },
     {
       id: 5,
-      title: "Apartment 5",
-      img: "https://images.pexels.com/photos/276625/pexels-photo-276625.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      title: "Nquen Health Center ",
+      img: "/health-center.png",
       bedroom: 3,
       bathroom: 2,
       price: 1500,
       address: "567 Victoria Road, London",
       latitude: 53.4084,
       longitude: -2.9916,
+      ratings:["⭐","⭐","⭐", "⭐"]
+
     },
     {
       id: 6,
       title: "Apartment 6",
-      img: "https://images.pexels.com/photos/271816/pexels-photo-271816.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      img: "/Mbingo.png",
       bedroom: 1,
       bathroom: 1,
       price: 800,
       address: "890 Regent Street, London",
       latitude: 54.9783,
       longitude: -1.6174,
+      ratings:["⭐","⭐","⭐", "⭐"]
+
     },
     {
       id: 7,
-      title: "Apartment 7",
-      img: "https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      title: "Shisong Catholic Hospital",
+      img: "/shisong.png",
       bedroom: 2,
       bathroom: 1,
       price: 1000,
       address: "112 Piccadilly, London",
       latitude: 53.3811,
       longitude: -1.4701,
+      ratings:["⭐","⭐","⭐", "⭐"]
+
     },
     {
       id: 8,
@@ -86,6 +100,8 @@ export const listData = [
       address: "8765 Main High Street, London",
       latitude: 51.4545,
       longitude: -2.5879,
+      ratings:["⭐","⭐","⭐", "⭐"]
+
     },
   ];
   

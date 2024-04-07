@@ -16,15 +16,20 @@ function Card({ item }) {
           <span>{item.address}</span>
         </p>
         <p className="price">$ {item.price}</p>
+        <div className="ratings">
+        {item.ratings.map(rate=>(
+          <h3 className="rate" key={rate}>{rate}</h3>
+        ))}
+        </div>
         <div className="bottom">
           <div className="features">
             <div className="feature">
               <img src="/bed.png" alt="" />
-              <span>{item.bedroom} bedroom</span>
+              <span>{item.bedroom} Wards</span>
             </div>
             <div className="feature">
               <img src="/bath.png" alt="" />
-              <span>{item.bathroom} bathroom</span>
+              <span>{item.bathroom} Medical Doctors</span>
             </div>
           </div>
           <div className="icons">
@@ -33,6 +38,7 @@ function Card({ item }) {
             </div>
             <div className="icon">
               <img src="/chat.png" alt="" />
+              <sup className="msg">2</sup>
             </div>
           </div>
         </div>
