@@ -26,14 +26,25 @@ nav {
 
     .logo {
       font-weight: bold;
-      font-size: 20px;
+      font-size: 17px;
       display: flex;
       align-items: center;
-      gap: 10px;
+      // gap: 5px;
 
       img {
-        width: 28px;
+        width: 58px;
       }
+
+      h3{
+       color: green($color: #000000);
+
+        span{
+         color: red;
+        }
+     
+      }
+
+     
 
       span {
         @include md {

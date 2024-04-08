@@ -6,6 +6,7 @@ import {
 import ListPage from "./pages/list/list";
 import Layout from "./layout/layout"
 import SinglePage from "./pages/single/single-page";
+import DoctorPage from "./pages/doctors/Doctor";
 // import SinglePage from "./pages/single/single-page";
 // import ProfilePage from "./routes/profilePage/profilePage";
 // import Login from "./routes/login/login";
@@ -28,6 +29,11 @@ function App() {
         {
           path:"/:id",
           element:<SinglePage/>
+        },
+
+        {
+          path:"/doctor",
+          element:<DoctorPage/>
         },
         // {
         //   path:"/profile",

@@ -8,13 +8,13 @@ const Navbar = () => {
     <nav className="nav">
       <div className="left">
         <a href="/" className="logo">
-          <img src="/logo.png" alt="" />
-          <span>GitEstate</span>
+          <img src="/chlogo.png" alt="" />
+          <h3 className="check">Check<span>Health</span></h3>
         </a>
         <a href="/">Home</a>
         <a href="/">About</a>
         <a href="/list">Content</a>
-        <a href="/">Agents</a>
+        <a href="/doctor">Doctors</a>
         
       </div>
       <div className="right">
