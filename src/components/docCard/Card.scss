@@ -1,0 +1,140 @@
+@import "../../responsive.scss";
+.cardContainer{
+display: flex;
+gap: 19px;
+
+
+.card {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  flex: 1;
+
+  .imageContainer {
+    flex: 3;
+    height: 200px;
+
+    @include md {
+      display: none;
+    }
+
+    img {
+      width: 100%;
+      margin: 0 auto;
+      height: 80%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  }
+  .textContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+
+    img {
+      width: 16px;
+      height: 16px;
+    }
+
+    .title {
+      font-size: 20px;
+      font-weight: 600;
+      color: #444;
+      transition: all 0.4s ease;
+
+      &:hover {
+        color: #000;
+        scale: 1.01;
+      }
+    }
+
+    .address {
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      color: #888;
+    }
+
+    .ratings{
+      display: flex;
+
+    }
+
+    .price {
+      font-size: 20px;
+      font-weight: 300;
+      padding: 5px;
+      border-radius: 5px;
+      background-color: rgba(254, 205, 81, 0.438);
+      width: max-content;
+    }
+
+    .bottom {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+
+      .features {
+        display: flex;
+        gap: 20px;
+        font-size: 14px;
+
+        .feature {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          background-color: whitesmoke;
+          padding: 5px;
+          border-radius: 5px;
+        }
+      }
+
+      .icons {
+        display: flex;
+        gap: 20px;
+
+        .icon {
+          position: relative;
+          border: 1px solid #999;
+          padding: 2px 5px;
+          border-radius: 5px;
+        //   cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .msg{
+            position: absolute;
+           top: -6px;
+            color: white;
+            background-color: red;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            right: -2px;
+          }
+
+          &:hover {
+            background-color: lightgray;
+          }
+        }
+      }
+    }
+  }
+}
+.latestInfo{
+flex: 1;
+display: flex;
+flex-direction: column;
+gap: 12px;
+margin-top: 4rem;
+
+}
+
+}

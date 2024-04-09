@@ -3,12 +3,12 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import ListPage from "./pages/list/list";
+import ListPage from "./pages/listPage/ListPage";
 import Layout from "./layout/layout"
 import SinglePage from "./pages/single/single-page";
 import DoctorPage from "./pages/doctors/Doctor";
 // import SinglePage from "./pages/single/single-page";
-// import ProfilePage from "./routes/profilePage/profilePage";
+import ProfilePage from "./pages/profile/Profile";
 // import Login from "./routes/login/login";
 // import Register from "./routes/register/register";
 
@@ -35,10 +35,10 @@ function App() {
           path:"/doctor",
           element:<DoctorPage/>
         },
-        // {
-        //   path:"/profile",
-        //   element:<ProfilePage/>
-        // },
+        {
+          path:"/profile",
+          element:<ProfilePage/>
+        },
         // {
         //   path:"/login",
         //   element:<Login/>
