@@ -3,10 +3,18 @@
 .profilePage {
   display: flex;
   height: 100%;
+  
 
   @include md{
     flex-direction: column;
     overflow: scroll;
+  }
+
+  @include sm{
+  
+   
+
+
   }
 
   .details {
@@ -28,17 +36,31 @@
       .title{
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        gap: 23px;
+        justify-content:center;
+        flex-direction: column;
+        align-items: center;
 
         h1{
           font-weight: 300;
+          font-size: 23px;
         }
-
+@include sm{
+  font-size: 10px;
+  font-weight: bold;
+  color: teal;
+}
         button{
           padding: 12px 24px;
-          background-color: #fece51;
+          background-color: #0d4e22;
           cursor: pointer;
           border: none;
+          color: #fff;
+          width: max-content;
+          @include sm{
+            font-size: 12px;
+            width: 100%;
+          }
         }
       }
 
@@ -46,38 +68,69 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
-        position: relative;
+        margin-top: 23px;
+        // position: relative;
      
 
         .bigImage{
           width: 100%;
           height: 200px;
           background-color: teal;
+          position: relative;
+
+          @include sm{
+            width: 90%;
+            margin: 0 auto;
+            height: 100px;
+          }
 
           img{
             width: 100%;
             height: 200px;
+        
+            @include sm{
+              width: 120%;
+              height: 100px;
+            }
           }
-        }
 
+          
         .smallImage{
           position: absolute;
+          top: 50%;
+          left: 37%;
           
+          @include sm{
+            top: 40%;
+            left: 40%;
+          }
         
           img{
             width: 200px;
             height: 200px;
-          top: 200px;
-          left: 270px;
+          // top: 200px;
+          // left: 270px;
 
             border-radius: 50%;
             object-fit: cover;
             position: absolute;
+
+            @include sm{
+              width: 100px;
+              height: 100px;
+             
+            }
           }
-          top: -50%;
+        }
         }
 
+
       
+      }
+      span{
+        @include sm{
+          margin-top: 2rem;
+        }
       }
     }
   }

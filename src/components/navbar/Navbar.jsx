@@ -1,17 +1,21 @@
 import React, { useState } from "react";
 import "./Navbar.scss";
 import { Link } from "react-router-dom";
+import {CiDark, CiLight} from "react-icons/ci"
 
 const Navbar = () => {
   const user=true;
 
   const [open, setOpen]=useState(false)
+  const toggle=()=>{
+    console.log("clicked");
+  }
   return (
     <nav className="nav">
       <div className="left">
         <a href="/" className="logo">
           <img src="/chlogo.png" alt="" />
-          <h3 className="check">Check<span>Health</span></h3>
+          <h3 className="check">Talk<span>Health</span></h3>
         </a>
         <a href="/">Home</a>
         <a href="/">About</a>
@@ -20,6 +24,15 @@ const Navbar = () => {
         
       </div>
       <div className="right">
+      <div className="mode">
+      <span>
+      <CiLight onClick={toggle} size={24}/> 
+      </span>
+      <span>
+      <CiDark onClick={toggle} size={24} color="#fff"/>  
+      
+      </span>
+      </div>
       {user ? 
         (<div className="user">
         

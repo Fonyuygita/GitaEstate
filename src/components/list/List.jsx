@@ -13,10 +13,11 @@ function List() {
   const data = doctorsData;
 
 
-  return <div className="list">
+  return( 
+    
+    <div className="list">
     <div className="listContainer">
       <div className="wrapper">
-        
      {data.map(item=>(
       <Doctor key={item.id} data={item}/>
      ))}
@@ -24,7 +25,9 @@ function List() {
       </div>
     </div>
   
-  </div>;
+    
+  </div>
+    )
 }
 
 export default List;

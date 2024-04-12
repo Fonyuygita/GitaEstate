@@ -10,7 +10,6 @@ function ProfilePage() {
         <div className="wrapper">
           <div className="title">
             <h1>User Information</h1>
-            <button>Update Profile</button>
           </div>
           <div className="info">
             
@@ -19,13 +18,16 @@ function ProfilePage() {
        src="/user.png"
        alt=""
      />
-       </div>
-              <div className="smallImage">
+
+
+     <div className="smallImage">
               <img
               src="/user.png"
               alt=""
             />
               </div>
+       </div>
+              
             
             
             <span>
@@ -36,8 +38,8 @@ function ProfilePage() {
             </span>
           </div>
           <div className="title">
-            <h1>My Favorite Doctors</h1>
-            <button>Create New Post</button>
+            <h1>Doctors you may know</h1>
+            <button>New Post</button>
           </div>
         <List/>
           

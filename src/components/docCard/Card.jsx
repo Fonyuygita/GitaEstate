@@ -1,7 +1,18 @@
 import { Link } from "react-router-dom";
 import "./Card.scss";
+import { FaHeart, FaCommentAlt, FaShare } from 'react-icons/fa';
+import { useState } from "react";
 
 const Doctor=({data}) =>{
+  const [like, setLike]=useState(false)
+  const [countLike, setCountLike]=useState(0)
+
+
+  const handleLike=()=>{
+    setLike(!like)
+    setCountLike(count=>count+1)
+    
+  }
   console.log(data);
   return (
     <div className="cardContainer">
@@ -12,44 +23,36 @@ const Doctor=({data}) =>{
       <div className="textContainer">
         <h2 className="title">
           <Link to={`/${data.id}`}>{data.name}</Link>
+          <div className="specialist">{data.specialty}</div>
         </h2>
+        <div className="location">
         <p className="address">
           <img src="/pin.png" alt="" />
           <span>{data.address}</span>
         </p>
-        <p className="price">$ {data.price}</p>
+        <p className="experience">{data.experience}</p>
+        </div>
         <div className="ratings">
+        <span>Ratings</span>
         {data.ratings.map(rate=>(
           <h3 className="rate" key={rate}>{rate}</h3>
         ))}
         </div>
-        <div className="bottom">
-          <div className="features">
-            <div className="feature">
-              <img src="/bed.png" alt="" />
-              <span>{data.bedroom} Wards</span>
-            </div>
-            <div className="feature">
-              <img src="/bath.png" alt="" />
-              <span>{data.specialty} Experience</span>
-            </div>
-          </div>
-          <div className="icons">
-            <div className="icon">
-              <img src="/save.png" alt="" />
-            </div>
-            <div className="icon">
-              <img src="/chat.png" alt="" />
-              <sup className="msg">2</sup>
-            </div>
-          </div>
-        </div>
+      
       </div>
     </div>
+
 
     <div className="latestInfo">
     <h3>Update from {data.name}</h3>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident corporis doloribus aspernatur excepturi dolore maxime suscipit, odio voluptatibus eius .</p>
+    <div className="icons">
+    <span onClick={handleLike}>{countLike} {countLike>=10 ? "k" : ""} <FaHeart color={like ? "red" : "gray"}/></span>
+    <span>24 <FaShare /></span>
+    <span>234 <FaCommentAlt color="red"/></span>
+    
+
+    </div>
     </div>
     </div>
   );

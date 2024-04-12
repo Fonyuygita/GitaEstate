@@ -64,6 +64,19 @@ nav {
     justify-content: flex-end;
     background-color: #fcf5f3;
     height: 100%;
+    gap: 14px;
+
+    .mode{
+      background-color: teal;
+      padding: 7px;
+      border-radius: 45px;
+      &:nth-child(odd){
+        color: white;
+        background-color: black;
+        cursor: pointer;
+      }
+      
+    }
 
     @include md {
       background-color: transparent;
@@ -150,6 +163,7 @@ nav {
       align-items: center;
       justify-content: center;
       font-size: 24px;
+      display: none;
 
       &.active {
         right: 0;
