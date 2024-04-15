@@ -1,4 +1,4 @@
-
+import React from "react";
 import "./list.scss"
 import Filter from "../../components/filter/Filter"
 // import Card from "../../components/card/Card"

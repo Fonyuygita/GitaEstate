@@ -1,3 +1,4 @@
+import React from "react";
 import Chat from "../../components/chat/Chat";
 import List from "../../components/list/List.jsx";
 

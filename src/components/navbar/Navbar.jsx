@@ -1,15 +1,15 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./Navbar.scss";
 import { Link } from "react-router-dom";
 import {CiDark, CiLight} from "react-icons/ci"
+import { DarkModeContext } from "../../context/DarkModeContext";
 
 const Navbar = () => {
   const user=true;
+  const {darkMode, toggle}=useContext(DarkModeContext);
 
   const [open, setOpen]=useState(false)
-  const toggle=()=>{
-    console.log("clicked");
-  }
+
   return (
     <nav className="nav">
       <div className="left">
@@ -25,11 +25,9 @@ const Navbar = () => {
       </div>
       <div className="right">
       <div className="mode">
+    
       <span>
-      <CiLight onClick={toggle} size={24}/> 
-      </span>
-      <span>
-      <CiDark onClick={toggle} size={24} color="#fff"/>  
+      {darkMode ? <CiLight onClick={toggle} size={30} color="#fff"/> : <CiDark onClick={toggle}  size={30} color="#000"/>  }
       
       </span>
       </div>
@@ -56,9 +54,9 @@ const Navbar = () => {
         </>
       )}
        
-        <div className="menuIcon">
+        {/*<div className="menuIcon">
         <img src="/menu.png" alt=""  onClick={()=>setOpen(prev=>!prev)}/>
-        </div>
+    </div>*/}
         <div className={open ? "menu active" : "menu"}>
         <a href="/">Home</a>
         <a href="/">About</a>

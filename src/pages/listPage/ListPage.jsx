@@ -1,3 +1,5 @@
+import React from "react";
+
 import { listData } from "../../lib/dummydata";
 import "./listPage.scss";
 import Filter from "../../components/filter/Filter"

@@ -14,7 +14,11 @@ const HomePage = () => {
             vero, facere illum et eveniet alias quae enim? Aspernatur, optio.
           </p>
 
-          <SearchBar />
+<div className="btn">
+<button>See Gita</button>
+<button className="register">Register</button>
+
+</div>         
 
           <div className="boxes">
             <div className="box">
@@ -35,7 +39,7 @@ const HomePage = () => {
         </div>
       </div>
       <div className="imgContainer">
-        <img src="/left-image.png" alt="" />
+        <img src="/main.png" alt="" />
       </div>
     </div>
   );

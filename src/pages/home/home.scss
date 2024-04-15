@@ -1,11 +1,37 @@
 @import "../../responsive.scss";
+@import "../../style.scss";
 
 .homePage{
+    
+@include themify($themes){
+    background-color: themed("bgSoft");
+    padding: 20px 70px;
+
+    @include md{
+       flex: 1;
+        background-color: themed("bg");
+        justify-content: center;
+        align-items: center;
+      
+        padding: 3px 10px;
+        
+    }
+
+    
+
+
     display: flex;
     height: 100%;
     .textContainer{
         flex:3;
-        background-color: #fcf5f3;
+        background-color: themed("bg");
+
+        @include md{
+            flex: 1;
+            background-color: themed("bg");
+            
+        }
+        
 
         .wrapper{
             padding-right: 100px;
@@ -16,7 +42,38 @@
             gap: 50px;
             height: 100%;
             // align-items: center;
+            width: inherit;
             justify-content: center;
+
+            @include sm{
+                
+                margin: 0 auto;
+                background-color: themed("bg");
+                margin-left: 0;
+                justify-content: center;
+                
+                
+            }
+            .btn{
+                display: flex;
+                gap: 12px;
+                 button{
+                    padding: 12px;
+                    padding-right: 15px;
+                    padding-left: 15px;
+                    border: none;
+                    outline: none;
+                    color:themed("bg"); ;
+                    background-color: themed("logo");
+                    cursor: pointer;
+
+                 }
+                 .register{
+                    background-color: themed("bgBtn");
+                    color: themed("logo");
+                 }
+
+            }
 
             @include md{
                padding: 0;
@@ -31,21 +88,23 @@
         }
 
         .title{
-            color: black;
+            color: themed("textColorSoft");
             font-size: 44px;
 
             @include sm{
-                font-size: 35px;
+                font-size: 25px;
             }
         }
 
         p{
-            color: black;
+            color: themed("textColor");
         }
 
         .boxes{
             display: flex;
-            justify-content: space-between;
+            justify-content: start;
+            align-items: center;
+            gap: 12px;
 
            
             @include lg{
@@ -54,7 +113,7 @@
 
             .box{
                 padding: 12px;
-                background-color: black;
+                background-color: themed("bgSoft");
                 border-radius: 13px;
                 color: #fcf5f3;
                 
@@ -71,10 +130,7 @@
                     font-weight: 200;
                 }
 
-                &:nth-child(odd){
-                background-color: #fece51;
-                color: black;
-                }
+               
     
 
             }
@@ -86,13 +142,18 @@
     .imgContainer{
         position: relative;
         flex: 2;
-        background-color: #fcf5f3;
+        background-color:themed("bgSoft");
         display: flex;
         align-items: center;
 
         @include md{
             display: none;
         }
+
+        @include md{
+            display: none;
+        }
+
 
         img{
             width: 115%;
@@ -106,6 +167,8 @@
         }
     }
 
+
+}
 
 }
 
