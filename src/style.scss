@@ -4,9 +4,10 @@ $themes: (
         logo:darkblue,
         bgSoft:#f6f3f3,
         textColoSoft:#555,
-        bgBtn:#0f54be,
-
+        bgBtn:#f7c14b85,
+        bgDeep:#fff,
         border:lightgray),
+       
        
 
         
@@ -17,7 +18,9 @@ $themes: (
         bgSoft:#333,
         textColorSoft:lightgray,
         bgBtn:#0f54be,
-        border:#444),
+        bgDeep:#000,
+        border:#555,
+    )
        
         
 );

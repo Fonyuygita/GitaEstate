@@ -39,7 +39,10 @@ const HomePage = () => {
         </div>
       </div>
       <div className="imgContainer">
-        <img src="/main.png" alt="" />
+        <img src="/bghero.png" alt="" />
+        <div className="boxCover">
+        <p>Check your Health</p>
+        </div>
       </div>
     </div>
   );

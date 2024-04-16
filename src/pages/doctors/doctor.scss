@@ -1,8 +1,11 @@
+@import "../../style.scss";
 .doctor-page {
+
+  @include themify($themes){
     padding: 20px;
     height: 100vh;
     overflow: scroll;
-  
+  background-color: themed("bg");
   
     header {
       display: flex;
@@ -12,6 +15,7 @@
   
       h1 {
         margin-bottom: 10px;
+        color: themed("textColorSoft");
       }
   
       input {
@@ -21,6 +25,7 @@
         border-radius: 4px;
         width: 300px;
         max-width: 100%;
+        background-color: themed("bgSoft");
       }
     }
   
@@ -31,7 +36,7 @@
     }
   
     .doctor-card {
-      background-color: #f5f5f5;
+      background-color: themed("bgDeep");
       border-radius: 4px;
       padding: 20px;
       display: flex;
@@ -62,11 +67,14 @@
           font-size: 16px;
           text-align: center;
           margin-bottom: 12px;
+          color: themed("textColorSoft");
         }
   
         p {
           margin: 0;
+          color: themed("logo");
         }
       }
     }
   }
+}

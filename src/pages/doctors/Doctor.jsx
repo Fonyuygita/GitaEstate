@@ -6,6 +6,76 @@ const doctors = [
     name: 'Dr. John Doe',
     specialist: 'Cardiologist',
     hospital: 'ABC Hospital',
+    image: '/doc1.png'
+  },
+  {
+    id: 1,
+    name: 'Dr. John Doe',
+    specialist: 'Cardiologist',
+    hospital: 'ABC Hospital',
+    image: '/doc2.png'
+  },
+  {
+    id: 1,
+    name: 'Dr. John Doe',
+    specialist: 'Cardiologist',
+    hospital: 'ABC Hospital',
+    image: '/doc3.png'
+  },
+  {
+    id: 1,
+    name: 'Dr. John Doe',
+    specialist: 'Cardiologist',
+    hospital: 'ABC Hospital',
+    image: '/doc4.png'
+  },
+
+  {
+    id: 1,
+    name: 'Dr. John Doe',
+    specialist: 'Cardiologist',
+    hospital: 'ABC Hospital',
+    image: '/doc5.png'
+  },
+
+  {
+    id: 1,
+    name: 'Dr. John Doe',
+    specialist: 'Cardiologist',
+    hospital: 'ABC Hospital',
+    image: '/doc6.png'
+  },
+
+  {
+    id: 1,
+    name: 'Dr. John Doe',
+    specialist: 'Cardiologist',
+    hospital: 'ABC Hospital',
+    image: '/doc8.png'
+  },
+
+  {
+    id: 1,
+    name: 'Dr. John Doe',
+    specialist: 'Cardiologist',
+    hospital: 'ABC Hospital',
+    image: '/doc.png'
+  },
+
+
+  {
+    id: 1,
+    name: 'Dr. John Doe',
+    specialist: 'Cardiologist',
+    hospital: 'ABC Hospital',
+    image: '/doc.png'
+  },
+
+  {
+    id: 1,
+    name: 'Dr. John Doe',
+    specialist: 'Cardiologist',
+    hospital: 'ABC Hospital',
     image: '/doc.png'
   },
   {
@@ -51,7 +121,7 @@ const doctors = [
     name: 'Dr. John Doe',
     specialist: 'Cardiologist',
     hospital: 'ABC Hospital',
-    image: '/doc.png'
+    image: '/doc1.png'
   },
 
   {
@@ -59,77 +129,7 @@ const doctors = [
     name: 'Dr. John Doe',
     specialist: 'Cardiologist',
     hospital: 'ABC Hospital',
-    image: '/doc.png'
-  },
-
-
-  {
-    id: 1,
-    name: 'Dr. John Doe',
-    specialist: 'Cardiologist',
-    hospital: 'ABC Hospital',
-    image: '/doc.png'
-  },
-
-  {
-    id: 1,
-    name: 'Dr. John Doe',
-    specialist: 'Cardiologist',
-    hospital: 'ABC Hospital',
-    image: '/doc.png'
-  },
-  {
-    id: 1,
-    name: 'Dr. John Doe',
-    specialist: 'Cardiologist',
-    hospital: 'ABC Hospital',
-    image: '/doc.png'
-  },
-  {
-    id: 1,
-    name: 'Dr. John Doe',
-    specialist: 'Cardiologist',
-    hospital: 'ABC Hospital',
-    image: '/doc.png'
-  },
-  {
-    id: 1,
-    name: 'Dr. John Doe',
-    specialist: 'Cardiologist',
-    hospital: 'ABC Hospital',
-    image: '/doc.png'
-  },
-
-  {
-    id: 1,
-    name: 'Dr. John Doe',
-    specialist: 'Cardiologist',
-    hospital: 'ABC Hospital',
-    image: '/doc.png'
-  },
-
-  {
-    id: 1,
-    name: 'Dr. John Doe',
-    specialist: 'Cardiologist',
-    hospital: 'ABC Hospital',
-    image: '/doc.png'
-  },
-
-  {
-    id: 1,
-    name: 'Dr. John Doe',
-    specialist: 'Cardiologist',
-    hospital: 'ABC Hospital',
-    image: '/doc.png'
-  },
-
-  {
-    id: 1,
-    name: 'Dr. John Doe',
-    specialist: 'Cardiologist',
-    hospital: 'ABC Hospital',
-    image: '/doc.png'
+    image: '/doc2.png'
   },
 
 
@@ -138,7 +138,7 @@ const doctors = [
     name: 'Dr. John Doe',
     specialist: 'Cardiologist',
     hospital: 'ABC Hospital',
-    image: '/doc.png'
+    image: '/doc3.png'
   },
   // Add more doctors here
 ];

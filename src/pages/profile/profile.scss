@@ -1,13 +1,18 @@
 @import "../../responsive.scss";
+@import "../../style.scss";
 
 .profilePage {
+  @include themify($themes){
   display: flex;
   height: 100%;
-  
+  background: themed("bgSoft");
 
   @include md{
     flex-direction: column;
     overflow: scroll;
+    background-color: themed("bg");
+
+
   }
 
   @include sm{
@@ -40,10 +45,19 @@
         justify-content:center;
         flex-direction: column;
         align-items: center;
+        color:themed("textColorSoft");
 
         h1{
           font-weight: 300;
           font-size: 23px;
+          color: themed("logo");
+          @include sm{
+            font-size: 20px;
+            font-weight: bold;
+            color: themed("textColorSoft");
+            text-align: center;
+            margin-left: 32px;
+          }
         }
 @include sm{
   font-size: 10px;
@@ -52,7 +66,7 @@
 }
         button{
           padding: 12px 24px;
-          background-color: #0d4e22;
+          background-color: themed("bgBtn");
           cursor: pointer;
           border: none;
           color: #fff;
@@ -60,6 +74,7 @@
           @include sm{
             font-size: 12px;
             width: 100%;
+            margin-left: 34px;
           }
         }
       }
@@ -128,10 +143,15 @@
       
       }
       span{
+        color: themed("logo");
         @include sm{
           margin-top: 2rem;
+          font-size: 12px;
+          text-align: center;
+          margin-left: 29px;
         }
       }
+     
     }
   }
   .chatContainer {
@@ -147,6 +167,8 @@
     .wrapper{
       padding: 0px 20px;
       height: 100%;
+      background-color: themed("bg");
     }
   }
+}
 }
