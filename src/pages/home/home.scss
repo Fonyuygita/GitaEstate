@@ -115,7 +115,7 @@
                 padding: 12px;
                 background-color: themed("bgSoft");
                 border-radius: 13px;
-                color: #fcf5f3;
+                color: themed("textColorSoft");
                 
                 h1{
                     font-size: 34px;
@@ -167,7 +167,7 @@
     align-items: center;
     justify-content: center;
     font-size: 23px;
-    color: #fcf5f3;
+    color: themed("logo");
 
 }
 

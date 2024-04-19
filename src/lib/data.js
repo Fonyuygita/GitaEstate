@@ -10,7 +10,15 @@ export const doctorsData = [
       address: "456 Park Avenue, London",
       latitude: 51.5074,
       longitude: -0.1278,
-      ratings:["⭐","⭐","⭐","⭐"]
+      ratings:["⭐","⭐","⭐","⭐"],
+      images: [
+        "/doc6.png","/doc1.png","/doc3.png"
+      ],
+      following:["/doc2.png", "doc3.png",'/doc3.png','/doc4.png', 'doc8.png',"/doc2.png", "/doc5.png",'/doc6.png','/doc4.png', '/user.png' ],
+      
+      description:
+      "Future alike hill pull picture swim magic chain seed engineer nest outer raise bound easy poetry gain loud weigh me recognize farmer bare danger. actually put square leg vessels earth engine matter key cup indeed body film century shut place environment were stage vertical roof bottom lady function breeze darkness beside tin view local breathe carbon swam declared magnet escape has from pile apart route coffee storm someone hold space use ahead sheep jungle closely natural attached part top grain your grade trade corn salmon trouble new bend most teacher range anybody every seat fifteen eventually",
+
     },
     {
       id: 2,
@@ -23,7 +31,14 @@ export const doctorsData = [
       address: "789 Oxford Street, London",
       latitude: 52.4862,
       longitude: -1.8904,
-      ratings:["⭐","⭐"]
+      ratings:["⭐","⭐"],
+      images: [
+        "/doc8.png","/doc2.png","/chdemo.png"
+      ],
+      following:["/doc2.png", "/user.png",'/user.png','/doc4.png', '/doc6.png', "/doc2.png", "/doc5.png",'/doc6.png','/doc4.png', '/user.png'],
+      
+      description:
+      "Future alike hill pull picture swim magic chain seed engineer nest outer raise bound easy poetry gain loud weigh me recognize farmer bare danger. actually put square leg vessels earth engine matter key cup indeed body film century shut place environment were stage vertical roof bottom lady function breeze darkness beside tin view local breathe carbon swam declared magnet escape has from pile apart route coffee storm someone hold space use ahead sheep jungle closely natural attached part top grain your grade trade corn salmon trouble new bend most teacher range anybody every seat fifteen eventually",
     },
     {
       id: 3,
@@ -36,7 +51,15 @@ export const doctorsData = [
       address: "101 Baker Street, London",
       latitude: 53.4808,
       longitude: -2.2426,
-      ratings:["⭐","⭐","⭐", "⭐"]
+      ratings:["⭐","⭐","⭐", "⭐"],
+      images: [
+        "/chdemo.png","/chdemo.png","/chdemo.png"
+      ],
+      following:["/doc2.png", "/doc6.png",'/user.png','/doc4.png', '/doc5.png', "/doc2.png", "/doc5.png",'/doc6.png','/doc4.png', '/user.png'],
+
+
+      description:
+      "Future alike hill pull picture swim magic chain seed engineer nest outer raise bound easy poetry gain loud weigh me recognize farmer bare danger. actually put square leg vessels earth engine matter key cup indeed body film century shut place environment were stage vertical roof bottom lady function breeze darkness beside tin view local breathe carbon swam declared magnet escape has from pile apart route coffee storm someone hold space use ahead sheep jungle closely natural attached part top grain your grade trade corn salmon trouble new bend most teacher range anybody every seat fifteen eventually",
     },
     {
         id: 4,
@@ -49,7 +72,14 @@ export const doctorsData = [
         address: "101 Baker Street, London",
         latitude: 53.4808,
         longitude: -2.2426,
-        ratings:["⭐","⭐","⭐", "⭐"]
+        ratings:["⭐","⭐","⭐", "⭐"],
+        images: [
+          "/chdemo.png","/chdemo.png","/chdemo.png"
+        ],
+      following:["/doc2.png", "/doc5.png",'/doc6.png','/doc4.png', '/user.png', "/doc2.png", "/doc5.png",'/doc6.png','/doc4.png', '/user.png'],
+        
+        description:
+        "Future alike hill pull picture swim magic chain seed engineer nest outer raise bound easy poetry gain loud weigh me recognize farmer bare danger. actually put square leg vessels earth engine matter key cup indeed body film century shut place environment were stage vertical roof bottom lady function breeze darkness beside tin view local breathe carbon swam declared magnet escape has from pile apart route coffee storm someone hold space use ahead sheep jungle closely natural attached part top grain your grade trade corn salmon trouble new bend most teacher range anybody every seat fifteen eventually",
       },
     // ...and so on for other doctors
   ];

@@ -1,9 +1,13 @@
 import "./single-page.scss"
 import Slider from "../../components/slider/Slider";
 import Map from "../../components/map/Map";
+import React from "react"
 import { singlePostData, userData } from "../../lib/dummydata";
+import { useParams } from "react-router-dom";
 
 function SinglePage() {
+const params=useParams();
+console.log(params);
   return (
     <div className="singlePage">
       <div className="details">

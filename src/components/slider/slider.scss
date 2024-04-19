@@ -76,6 +76,18 @@
 
   .bigImage {
     flex: 3;
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200;
+    width: 200;
+
+    img{
+      border-radius: 50%;
+      height: 200;
+      width: 200;
+    }
 
     @include sm {
       flex: 2;

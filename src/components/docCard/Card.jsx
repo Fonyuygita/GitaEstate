@@ -14,11 +14,11 @@ const Doctor=({data}) =>{
     setCountLike(count=>count+1)
     
   }
-  console.log(data);
+  // console.log(data);
   return (
     <div className="cardContainer">
     <div className="card">
-      <Link to={`/${data.id}`} className="imageContainer">
+      <Link to={`/doctor/${data.id}`} className="imageContainer">
         <img src={data.img} alt="" />
       </Link>
       <div className="textContainer">

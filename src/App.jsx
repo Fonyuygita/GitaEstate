@@ -11,6 +11,7 @@ import DoctorPage from "./pages/doctors/Doctor";
 // import SinglePage from "./pages/single/single-page";
 import ProfilePage from "./pages/profile/Profile";
 import { DarkModeContext } from "./context/DarkModeContext";
+import DoctorsSinglePage from "./pages/docSinglePage/docSinglePage";
 // import { useContext } from "react";
 // import { DarkModeContext } from "./context/DarkmodeContext";
 // import Login from "./routes/login/login";
@@ -33,6 +34,10 @@ function App() {
         {
           path:"/list",
           element:<ListPage/>
+        },
+        {
+          path:"/doctor/:id",
+          element:<DoctorsSinglePage/>
         },
         {
           path:"/:id",
