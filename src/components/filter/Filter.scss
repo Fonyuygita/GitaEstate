@@ -1,4 +1,6 @@
+@import "../../style.scss";
 .filter {
+  @include themify($themes){
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -21,7 +23,7 @@
       select {
         width: 100px;
         padding: 10px;
-        border: 1px solid #e0e0e0;
+        border: 1px solid themed("bgSoft");
         border-radius: 5px;
         font-size: 14px;
       }
@@ -29,7 +31,9 @@
   
     .top {
       input {
-        width: 100%;
+        width: 70%;
+        margin: 0 auto;
+        background-color: themed("bgSoft");
       }
     }
   
@@ -38,13 +42,40 @@
       justify-content: space-between;
       flex-wrap: wrap;
       gap: 20px;
+
+      .item{
+        
+          select{
+          background-color: themed("bgSoft");
+          color: themed("textColorSoft");
+           
+          option{
+            padding: 12px;
+            background-color: themed("bgSoft");
+          }
+          input{
+            background-color: themed("bgSoft");
+            color: themed("textColorSoft");
+             
+          }
+          }
+        
+      }
+
+      .item{
+        input{
+          background-color: themed("bgSoft");
+            color: themed("textColorSoft");
+        }
+      }
   
       button {
-        width: 100px;
-        padding: 10px;
+        width: 70px;
+        padding: 3px;
+        border-radius: 34%;
         border: none;
         cursor: pointer;
-        background-color: #fece51;
+        background-color: themed("bgBtn");
   
         img {
           width: 24px;
@@ -53,4 +84,4 @@
       }
     }
   }
-  
+}

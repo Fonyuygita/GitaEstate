@@ -16,7 +16,7 @@ function ProfilePage() {
             
        <div className="bigImage">
        <img
-       src="/user.png"
+       src="/BackBg.png"
        alt=""
      />
 

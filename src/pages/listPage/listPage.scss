@@ -1,13 +1,24 @@
 @import "../../responsive.scss";
+@import "../../style.scss";
 
 .listPage {
+  @include themify($themes){
   display: flex;
   height: 100%;
+  background-color: themed("bg0");
+
+
+  @include md{
+    flex-direction: column;
+
+  }
 //   margin-top: 99px;
 
   .listContainer {
     flex: 3;
     height: 100%;
+
+
 
     .wrapper{
       height: 100%;
@@ -16,6 +27,7 @@
       flex-direction: column;
       gap: 50px;
       overflow-y: scroll;
+      background-color: themed("bgSoft");
       padding-bottom: 50px;
       scroll-behavior: smooth;
     }
@@ -24,11 +36,14 @@
     flex: 2;
     height: 100%;
     height: 100vh;
-    background-color: #fff;
+    background-color: themed("bg");
      
 
     @include md{
-      display: none;
+      flex: 1;
+     height: 300px;
+     width: 40%x;
     }
   }
+}
 }

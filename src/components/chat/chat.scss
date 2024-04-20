@@ -12,6 +12,10 @@
       flex-direction: column;
       gap: 20px;
       overflow-y: scroll;
+      background-color: themed("bg");
+      h1{
+        color: themed("textColorSoft");
+      }
 
       span{
         color: themed("textColorSoft");

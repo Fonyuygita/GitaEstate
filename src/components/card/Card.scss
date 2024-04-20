@@ -1,6 +1,10 @@
 @import "../../responsive.scss";
+@import "../../style.scss";
 
 .card {
+
+@include themify($themes){
+
   display: flex;
   gap: 20px;
 
@@ -34,11 +38,11 @@
     .title {
       font-size: 20px;
       font-weight: 600;
-      color: #444;
+      color: themed("textColorSoft");
       transition: all 0.4s ease;
 
       &:hover {
-        color: #000;
+        color: themed("border");
         scale: 1.01;
       }
     }
@@ -48,7 +52,7 @@
       display: flex;
       align-items: center;
       gap: 5px;
-      color: #888;
+      color: themed("textColorSoft");
     }
 
     .ratings{
@@ -61,8 +65,9 @@
       font-weight: 300;
       padding: 5px;
       border-radius: 5px;
-      background-color: rgba(254, 205, 81, 0.438);
+      background-color: themed("bgSoft");
       width: max-content;
+      color: themed("textColorSoft");
     }
 
     .bottom {
@@ -79,7 +84,8 @@
           display: flex;
           align-items: center;
           gap: 5px;
-          background-color: whitesmoke;
+          background-color: themed("bgSoft");
+          color: themed("textColorSoft");
           padding: 5px;
           border-radius: 5px;
         }
@@ -120,4 +126,5 @@
       }
     }
   }
+}
 }

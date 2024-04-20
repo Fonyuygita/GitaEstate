@@ -10,34 +10,34 @@ function Chat() {
         <h1>Messages</h1>
         <div className="message">
           <img
-            src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            src="/doc1.png"
             alt=""
           />
-          <span>John Doe</span>
+          <span>Fonyuy Patrick</span>
           <p>Lorem ipsum dolor sit amet...</p>
         </div>
         <div className="message">
           <img
-            src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            src="/doc2.png"
             alt=""
           />
-          <span>John Doe</span>
+          <span>Fonta Rex</span>
           <p>Lorem ipsum dolor sit amet...</p>
         </div>
         <div className="message">
           <img
-            src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            src="/doc5.png"
             alt=""
           />
-          <span>John Doe</span>
+          <span>Jiss Deil</span>
           <p>Lorem ipsum dolor sit amet...</p>
         </div>
         <div className="message">
           <img
-            src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            src="/doc4.png"
             alt=""
           />
-          <span>John Doe</span>
+          <span>Rene Cheel</span>
           <p>Lorem ipsum dolor sit amet...</p>
         </div>
         <div className="message">
@@ -45,8 +45,8 @@ function Chat() {
             src="/doc.png"
             alt=""
           />
-          <span>John Doe</span>
-          <p>Lorem ipsum dolor sit amet...</p>
+          <span>Kilo Vale</span>
+          <p>Hello Paul Take some water after rest...</p>
         </div>
         <div className="message">
           <img
