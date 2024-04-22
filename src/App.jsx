@@ -12,9 +12,11 @@ import DoctorPage from "./pages/doctors/Doctor";
 import ProfilePage from "./pages/profile/Profile";
 import { DarkModeContext } from "./context/DarkModeContext";
 import DoctorsSinglePage from "./pages/docSinglePage/docSinglePage";
+import Login from "./pages/login/LoginPage";
+import Register from "./pages/register/registerPage";
 // import { useContext } from "react";
 // import { DarkModeContext } from "./context/DarkmodeContext";
-// import Login from "./routes/login/login";
+// import Login from "./pages/login/LoginPage";
 // import Register from "./routes/register/register";
 
 function App() {
@@ -52,14 +54,14 @@ function App() {
           path:"/profile",
           element:<ProfilePage/>
         },
-        // {
-        //   path:"/login",
-        //   element:<Login/>
-        // },
-        // {
-        //   path:"/register",
-        //   element:<Register/>
-        // }
+        {
+          path:"/login",
+          element:<Login/>
+        },
+        {
+          path:"/register",
+          element:<Register/>
+        }
       ]
     }
   ]);
